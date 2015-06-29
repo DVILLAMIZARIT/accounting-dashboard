@@ -1,0 +1,7 @@
+span.badge.activos:after{
+	content: " activos" !important;
+}
+
+.u-paddingBottom{
+	padding-bottom: 1.2em;
+}
