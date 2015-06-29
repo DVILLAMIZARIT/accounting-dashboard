@@ -3,6 +3,7 @@
 <head>
 	<title>Contabilidad - Coatzacode</title>
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/media-queries.css">
 	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<meta charset="UTF-8">
@@ -10,65 +11,66 @@
 <body>
 	<nav>
     	<div class="nav-wrapper">
-	      		
-   		</div>
+    		<ul class="right hide-on-med-and-down">
+    			<li><a href="#!"><i class="material-icons">refresh</i></a></li>
+    		</ul>
+	      	<ul id="slide-out" class="side-nav fixed">
+	      		<li><a href="#!">Ingresos</a></li>
+    			<li><a href="#!">Egresos</a></li>
+    			<li><a href="#!">Proyectos <span class="new activos badge">4</span></a></li>
+    			<li><a href="#!">Clientes</a></li>
+  			</ul>
+  			<a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>
+  		</div>
   	</nav>
 	<div class="u-paddingBottom"></div>
-	<div class="row">
-		<div class="col s12 m4 l3">
-			<div class="collection">
-    			<a href="#!" class="collection-item">
-    				Proyectos <span class="new activos badge">4</span>
-    			</a>
-    			<a href="#!" class="collection-item">
-    				Clientes
-    			</a>
-  			</div>
-      	</div>
-		<div class="col s12 m8 l9">
-			<!-- Dashboard -->
-			<div class="row">
-				<div class="col s12 m4">
-					<div class="card green lighten-1">
-						<div class="card-content white-text">
-							<p>Caja General</p>
-							<span class="card-title">$6,040.00</span>
+	<main>
+		<div class="row">
+			<div class="col s12 m12 l12">
+				<!-- Dashboard -->
+				<div class="row">
+					<div class="col s12 m4">
+						<div class="card green lighten-1">
+							<div class="card-content white-text">
+								<p>Caja General</p>
+								<span class="card-title">$6,040.00</span>
+							</div>
+						</div>
+					</div>
+					<div class="col s12 m4">
+						<div class="card grey">
+							<div class="card-content white-text">
+								<p>Ventas del Día</p>
+								<span class="card-title">$1,500.00</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col s12 m4">
-					<div class="card grey">
-						<div class="card-content white-text">
-							<p>Ventas del Día</p>
-							<span class="card-title">$1,500.00</span>
-						</div>
-					</div>
-				</div>
+				<p><strong>Operaciones Recientes</strong></p>
+				<table class="bordered responsive">
+					<thead>
+						<tr>
+							<th>Detalle</th>
+							<th>Cliente</th>
+							<th>Fecha</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Se agregó un monto de la operación número 10.</td>
+							<td>IBM</td>
+							<td>01/07/2015</td>
+						</tr>
+						<tr>
+							<td>Se agregó un monto de la operación número 10.</td>
+							<td>Google, Inc.</td>
+							<td>01/07/2015</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
-			<p><strong>Operaciones Recientes</strong></p>
-			<table class="bordered responsive">
-				<thead>
-					<tr>
-						<th>Detalle</th>
-						<th>Cliente</th>
-						<th>Fecha</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Se agregó un monto de la operación número 10.</td>
-						<td>IBM</td>
-						<td>01/07/2015</td>
-					</tr>
-					<tr>
-						<td>Se agregó un monto de la operación número 10.</td>
-						<td>Google, Inc.</td>
-						<td>01/07/2015</td>
-					</tr>
-				</tbody>
-			</table>
 		</div>
-	</div>
+	</main>
 </main>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="js/materialize.min.js"></script>
